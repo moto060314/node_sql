@@ -15,7 +15,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 const pool = mysql.createPool({
   host: 'localhost',
   user: 'root',
-  password: '',
+  password: '', // password が設定されていれば、それを使う。
   database: 'test',
   waitForConnections: true,
   connectionLimit: 5,
